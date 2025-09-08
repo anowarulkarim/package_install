@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="package_install.list">
+      <field name="name">package_install list</field>
+      <field name="model">package_install.package_install</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="package_install.action_window">
+      <field name="name">package_install window</field>
+      <field name="res_model">package_install.package_install</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="package_install.action_server">
+      <field name="name">package_install server</field>
+      <field name="model_id" ref="model_package_install_package_install"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="package_install" id="package_install.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="package_install.menu_1" parent="package_install.menu_root"/>
+    <menuitem name="Menu 2" id="package_install.menu_2" parent="package_install.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="package_install.menu_1_list" parent="package_install.menu_1"
+              action="package_install.action_window"/>
+    <menuitem name="Server to list" id="package_install" parent="package_install.menu_2"
+              action="package_install.action_server"/>
+-->
+  </data>
+</odoo>
