@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="menu_package_install_menu"
+              name="Install Packages"
+              parent="base.menu_custom"
+              />
+    <menuitem id="menu_package_install"
+              name="Install Packages"
+              parent="package_install.menu_package_install_menu"
+              action="action_package_install"
+              />
+</odoo>
