@@ -23,8 +23,8 @@
                                 type="object"
                                 string="Install"
                                 class="btn-primary"
+                            invisible="state in ['installed']"
                                 />
-                        <button string="Cancel" class="btn-secondary" special="cancel"/>
                 </header>
                 <sheet>
                     <group>
